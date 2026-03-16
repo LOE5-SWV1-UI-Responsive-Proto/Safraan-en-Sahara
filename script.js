@@ -61,3 +61,14 @@
   });
 
 })();
+// menu openen en sluiten bij klikken op de menu-titels 
+document.addEventListener("DOMContentLoaded", function () {
+  const buttons = document.querySelectorAll(".menu-title");
+
+  buttons.forEach(function (button) {
+    button.addEventListener("click", function () {
+      const content = button.nextElementSibling;
+      content.classList.toggle("open");
+    });
+  });
+});

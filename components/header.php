@@ -8,8 +8,8 @@
 
     <nav class="hoofd-nav" id="hoofdNavigatie" aria-hidden="true">
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Menu</a></li>
+        <li><a href="/index.php">Home</a></li>
+        <li><a href="/menu.php">Menu</a></li>
         <li><a href="#">Reserveren</a></li>
         <li><a href="#">Locatie</a></li>
         <li><a href="#">Vacatures</a></li>

@@ -632,3 +632,38 @@ address { font-style: normal; }
     max-width: 180px;
   }
 }
+.menu-page{
+  padding: 24px 16px;
+}
+
+.menu-column h2{
+  margin-bottom: 20px;
+}
+
+.menu-item{
+  border-bottom: 1px solid #ddd;
+}
+
+.menu-title{
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 16px 0;
+  font-size: 18px;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.menu-content{
+  display: none;
+  margin: 0;
+  padding: 0 0 16px;
+  color: #555;
+}
+
+.menu-content.open{
+  display: block;
+}
