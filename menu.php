@@ -12,11 +12,9 @@
 </head>
 <body>
     </main>
-<script src="script.js"></script>
 </body>
 </html>
   <?php include 'components/header.php'; ?>
-  <script src="script.js"></script>
 
 <main class="menu-page">
   <section class="menu-column">
@@ -54,6 +52,7 @@
       <p class="menu-content">Peterseliesalade met bulgur, tomaat, munt en citroen</p>
     </article>
     </section>
+    <br>
     
 
 
@@ -76,6 +75,7 @@
       <p class="menu-content">Marokkaanse soep met linzen, kikkererwten en vermicelli</p>
     </article>
     </section>
+    <br>
 
   <section class="menu-column">
     <h2>Hoofdgerechten</h2>
@@ -96,8 +96,148 @@
       <p class="menu-content">Traditioneel gerecht van lamsvlees in yoghurtsaus, geserveerd op saﬀraan-rijst met pijnboompitten</p>
     </article>
 
+    <article class="menu-item">
+      <button type="button" class="menu-title">
+        <span>Kipshawarma Schotel - 18,50</span>
+        <span>▼</span>
+      </button>
+      <p class="menu-content">Gemarineerde kip van de grill met knoflooksaus, geserveerd met rijst en salade</p>
+    </article>
+
+    <article class="menu-item">
+      <button type="button" class="menu-title">
+        <span>Kofte - 19,50</span>
+        <span>▼</span>
+      </button>
+      <p class="menu-content">Gekruide gehaktballetjes van lamsvlees met tomatensaus en rijst</p>
+    </article>
+
+    <article class="menu-item">
+      <button type="button" class="menu-title">
+        <span>Vegetarische Couscous - 19,50</span>
+        <span>▼</span>
+      </button>
+      <p class="menu-content">Couscous met gestoofde groenten, rozijnen en kikkererwten</p>
+    </article>
+    <br>
+    
+    <section class="menu-column">
+    <h2>Vis</h2>
+    
+    <article class="menu-item">
+      <button type="button" class="menu-title">
+        <span>Samke Harra - 21,50</span>
+        <span>▼</span>
+      </button>
+      <p class="menu-content">Gegrilde vis met pittige kruiden, geserveerd met rijst en geroosterde groenten</p>
+    </article>
+
+    <article class="menu-item">
+      <button type="button" class="menu-title">
+        <span>Tagine van Zeebaars  - 23,50</span>
+        <span>▼</span>
+      </button>
+      <p class="menu-content">Zeebaars gestoofd in saﬀraan-citroensaus met olijven en aardappelen</p>
+    </article>
+    <br>
+
+    <section class="menu-column">
+    <h2>Bijgerechten</h2>
+
+    <article class="menu-item">
+      <button type="button" class="menu-title">
+        <span>Arabische Rijst  - 4,50</span>
+        <span>▼</span>
+      </button>
+      <p class="menu-content">Met saﬀraan en pijnboompitten</p>
+    </article>
+
+    <article class="menu-item">
+      <button type="button" class="menu-title">
+        <span>Gegrilde Groenten  - 5,50</span>
+        <span>▼</span>
+      </button>
+      <p class="menu-content">Selectie van seizoensgroenten</p>
+    </article>
+
+    <article class="menu-item">
+      <button type="button" class="menu-title">
+        <span>Extra Platbrood  - 2,50</span>
+        <span>▼</span>
+      </button>
+      <p class="menu-content">Vers gebakken Arabisch brood</p>
+    </article>
+    <br>
+
+     <section class="menu-column">
+    <h2>Desserts</h2>
+
+    <article class="menu-item">
+      <button type="button" class="menu-title">
+        <span>Baklava  - 6,50</span>
+        <span>▼</span>
+      </button>
+      <p class="menu-content">Assortiment van huisgemaakte zoete bladerdeeggebakjes met noten en honing</p>
+    </article>
+
+    <article class="menu-item">
+      <button type="button" class="menu-title">
+        <span>Umm Ali  - 7,00</span>
+        <span>▼</span>
+      </button>
+      <p class="menu-content">Warme broodpudding met noten, rozijnen en kokos</p>
+    </article>
+
+     <article class="menu-item">
+      <button type="button" class="menu-title">
+        <span>Dadelpudding  - 6,50</span>
+        <span>▼</span>
+      </button>
+      <p class="menu-content">Huisgemaakte pudding met verse dadels en kardemom</p>
+    </article>
+    <br>
+
+    <section class="menu-column">
+    <h2>Dranken</h2>
+
+    <article class="menu-item">
+      <button type="button" class="menu-title">
+        <span>Arabische Koﬃe  - 3,50</span>
+        <span>▼</span>
+      </button>
+      <p class="menu-content">Traditioneel gezette koﬃe met kardemom</p>
+    </article>
+
+     <article class="menu-item">
+      <button type="button" class="menu-title">
+        <span>Verse Munthee  - 3,00</span>
+        <span>▼</span>
+      </button>
+      <p class="menu-content">Met verse munt en naar wens gezoet</p>
+    </article>
+
+    <article class="menu-item">
+      <button type="button" class="menu-title">
+        <span>Ayran  - 3,00</span>
+        <span>▼</span>
+      </button>
+      <p class="menu-content">Verfrissende yoghurtdrank</p>
+    </article>
+
+    <article class="menu-item">
+      <button type="button" class="menu-title">
+        <span>Verse Sappen  - 4,50</span>
+        <span>▼</span>
+      </button>
+      <p class="menu-content">Sinaasappel, granaatappel of mango</p>
+    </article>
+
+
+
   
   </section>
 </main>
+<script src="script.js"></script>
+<?php include 'components/footer.php'; ?>
 </body>
 </html>

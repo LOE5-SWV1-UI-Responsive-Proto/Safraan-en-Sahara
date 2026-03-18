@@ -621,6 +621,11 @@ address { font-style: normal; }
     max-width: 180px;
   }
 }
+/* menu pagina */
+
+p {
+  color: var(--kleur-goud) !important;
+}
 .menu-page {
   padding: 180px 16px 24px;
 }
