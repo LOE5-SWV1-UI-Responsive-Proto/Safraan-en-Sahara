@@ -632,12 +632,17 @@ address { font-style: normal; }
     max-width: 180px;
   }
 }
-.menu-page{
-  padding: 24px 16px;
+.menu-page {
+  padding: 180px 16px 24px;
 }
 
-.menu-column h2{
+.menu-column h2 {
+  color: var(--kleur-goud);
   margin-bottom: 20px;
+  font-family: var(--font-display);
+  font-size: 32px;
+  font-weight: 700;
+  display: block;
 }
 
 .menu-item{
@@ -655,13 +660,13 @@ address { font-style: normal; }
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
+  color: var(--kleur-goud);
 }
 
 .menu-content{
   display: none;
   margin: 0;
   padding: 0 0 16px;
-  color: #555;
 }
 
 .menu-content.open{

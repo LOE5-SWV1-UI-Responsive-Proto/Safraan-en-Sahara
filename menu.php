@@ -11,8 +11,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet" />
 </head>
 <body>
-    
+    </main>
+<script src="script.js"></script>
+</body>
+</html>
   <?php include 'components/header.php'; ?>
+  <script src="script.js"></script>
 
 <main class="menu-page">
   <section class="menu-column">
@@ -49,8 +53,10 @@
       </button>
       <p class="menu-content">Peterseliesalade met bulgur, tomaat, munt en citroen</p>
     </article>
+    </section>
+    
 
-    <main class="menu-page">
+
   <section class="menu-column">
     <h2>Soepen</h2>
 
@@ -69,8 +75,8 @@
       </button>
       <p class="menu-content">Marokkaanse soep met linzen, kikkererwten en vermicelli</p>
     </article>
+    </section>
 
-    <main class="menu-page">
   <section class="menu-column">
     <h2>Hoofdgerechten</h2>
 
@@ -82,8 +88,13 @@
       <p class="menu-content">Selectie van gegrild lamsvlees, kipshawarma en kofte, geserveerd met rijst en gegrilde groenten</p>
     </article>
 
-
-
+       <article class="menu-item">
+      <button type="button" class="menu-title">
+        <span>Mansaf - 20,50</span>
+        <span>▼</span>
+      </button>
+      <p class="menu-content">Traditioneel gerecht van lamsvlees in yoghurtsaus, geserveerd op saﬀraan-rijst met pijnboompitten</p>
+    </article>
 
   
   </section>

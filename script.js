@@ -61,7 +61,8 @@
   });
 
 })();
-// menu openen en sluiten bij klikken op de menu-titels 
+
+// dropdown openen en sluiten bij klikken op de menu-titels 
 document.addEventListener("DOMContentLoaded", function () {
   const buttons = document.querySelectorAll(".menu-title");
 
