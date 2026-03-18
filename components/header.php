@@ -11,7 +11,7 @@
         <li><a href="index.php">Home</a></li>
         <li><a href="menu.php">Menu</a></li>
         <li><a href="#">Reserveren</a></li>
-        <li><a href="#">Locatie</a></li>
+        <li><a href="locatie.php">Locatie</a></li>
         <li><a href="#">Vacatures</a></li>
         <li class="taal-wissel"><a href="#">NL &#9662;</a></li>
       </ul>

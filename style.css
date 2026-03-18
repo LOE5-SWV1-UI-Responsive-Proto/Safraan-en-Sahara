@@ -69,7 +69,7 @@ address { font-style: normal; }
   border-bottom: 2px solid var(--kleur-goud);
 }
 
-/* Logo header: één afbeelding, geen border-radius, vaste breedte mobiel */
+/* Logo header */
 .logo {
   display: flex;
   align-items: center;
@@ -158,7 +158,6 @@ address { font-style: normal; }
   font-weight: 700;
 }
 
-/* voledige schermen */
 .volledig-scherm {
   position: relative;
   width: 100%;
@@ -180,7 +179,6 @@ address { font-style: normal; }
   object-position: center;
 }
 
-/* Overlay hero */
 .hero-sectie .achtergrond-afbeelding::after {
   content: '';
   position: absolute;
@@ -193,7 +191,6 @@ address { font-style: normal; }
   );
 }
 
-/* Overlay sfeer */
 .sfeer-sectie .achtergrond-afbeelding::after {
   content: '';
   position: absolute;
@@ -201,7 +198,6 @@ address { font-style: normal; }
   background: rgba(0, 0, 0, 0.45);
 }
 
-/* herp tekst */
 .hero-tekst {
   position: absolute;
   bottom: 0;
@@ -223,7 +219,6 @@ address { font-style: normal; }
   letter-spacing: 0.02em;
 }
 
-/* CTA buttons */
 .cta-knoppen {
   display: flex;
   flex-direction: column;
@@ -288,7 +283,7 @@ address { font-style: normal; }
   line-height: 1.25;
 }
 
-/*chef's special */
+
 .special-sectie {
   background-color: var(--kleur-achtergrond);
   padding: 2.5rem 1.5rem 0;
@@ -341,7 +336,6 @@ address { font-style: normal; }
   object-position: center top;
 }
 
-/* footer */
 .site-footer {
   background-color: var(--kleur-footer);
   padding: 2rem 1.5rem;
@@ -352,7 +346,6 @@ address { font-style: normal; }
   align-items: start;
 }
 
-/* Footer logo: één afbeelding, geen border-radius, passende breedte mobiel */
 .footer-logo {
   grid-column: 1;
   grid-row: 1;
@@ -366,7 +359,7 @@ address { font-style: normal; }
   height: auto;
   display: block;
 }
-/* Einde footer logo styling */
+
 
 .contact-info {
   grid-column: 1 / -1;
@@ -435,7 +428,6 @@ address { font-style: normal; }
     padding: 0 2rem;
   }
 
-  /* Logo header tablet: iets groter */
   .logo img {
     max-width: 180px;
   }
@@ -494,7 +486,6 @@ address { font-style: normal; }
     align-self: center;
   }
 
-  /* Footer logo tablet: iets groter */
   .footer-logo img {
     max-width: 160px;
   }
@@ -560,7 +551,6 @@ address { font-style: normal; }
     border-radius: var(--radius);
   }
 
-  /* Logo header desktop: maximale breedte iets ruimer */
   .logo img {
     max-width: 200px;
   }
@@ -627,7 +617,6 @@ address { font-style: normal; }
     padding: 2rem 5rem;
   }
 
-  /* Footer logo desktop */
   .footer-logo img {
     max-width: 180px;
   }
@@ -666,4 +655,225 @@ address { font-style: normal; }
 
 .menu-content.open{
   display: block;
+}
+/* Locatie pagina */
+.locatie-pagina {
+  background-color: var(--kleur-achtergrond);
+}
+
+.locatie-sectie,
+.locatie-hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1.5rem;
+  text-align: center;
+}
+
+.locatie-hero h1 {
+  font-family: var(--font-display);
+  font-size: 3rem;
+  color: var(--kleur-goud);
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.locatie-sectie h2 {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  color: var(--kleur-goud);
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.adres-sectie address {
+  font-family: var(--font-body);
+  font-size: 1.2rem;
+  color: var(--kleur-tekst);
+  line-height: 1.8;
+  font-style: normal;
+}
+
+.email-sectie p {
+  font-family: var(--font-body);
+  font-size: 1.2rem;
+}
+
+.email-sectie a {
+  color: var(--kleur-goud);
+  text-decoration: none;
+  border-bottom: 2px solid var(--kleur-goud);
+  transition: var(--overgang);
+}
+
+.email-sectie a:hover,
+.email-sectie a:focus {
+  color: var(--kleur-oranje);
+  border-bottom-color: var(--kleur-oranje);
+}
+
+.telefoon-sectie p {
+  font-family: var(--font-body);
+  font-size: 1.2rem;
+}
+
+.telefoon-sectie a {
+  color: var(--kleur-goud);
+  text-decoration: none;
+  border-bottom: 2px solid var(--kleur-goud);
+  transition: var(--overgang);
+}
+
+.telefoon-sectie a:hover,
+.telefoon-sectie a:focus {
+  color: var(--kleur-oranje);
+  border-bottom-color: var(--kleur-oranje);
+}
+
+.social-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  line-height: 2;
+}
+
+.social-links li {
+  margin-bottom: 0.8rem;
+  color: var(--kleur-tekst);
+}
+
+.social-links a {
+  color: var(--kleur-goud);
+  text-decoration: none;
+  border-bottom: 1px solid var(--kleur-goud);
+  transition: var(--overgang);
+}
+
+.social-links a:hover,
+.social-links a:focus {
+  color: var(--kleur-oranje);
+  border-bottom-color: var(--kleur-oranje);
+}
+
+.openingstijden {
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  color: var(--kleur-tekst);
+  line-height: 1.8;
+  max-width: 400px;
+}
+
+.openingstijden dt {
+  font-weight: bold;
+  color: var(--kleur-goud);
+  margin-top: 1rem;
+}
+
+.openingstijden dd {
+  margin-left: 0;
+  margin-bottom: 0.5rem;
+}
+
+.map-sectie {
+  padding: 0;
+}
+
+.map-container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* tablet 768px */  
+
+@media (min-width: 768px) {
+
+  .locatie-hero h1 {
+    font-size: 4rem;
+  }
+
+  .locatie-sectie h2 {
+    font-size: 2.2rem;
+  }
+
+  .locatie-pagina {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+
+  .locatie-hero {
+    grid-column: 1 / -1;
+  }
+
+  .adres-sectie,
+  .email-sectie,
+  .telefoon-sectie,
+  .socials-sectie,
+  .openingstijden-sectie {
+    grid-column: 1 / 2;
+    min-height: auto;
+    padding: 3rem 2rem;
+  }
+
+  .map-sectie {
+    grid-column: 2 / 3;
+    grid-row: 2 / 7;
+    position: sticky;
+    top: var(--nav-hoogte);
+    height: calc(100vh - var(--nav-hoogte));
+  }
+
+  .map-container {
+    height: 100%;
+  }
+}
+
+/* desktop 1024px */
+@media (min-width: 1024px) {
+  
+  .locatie-hero h1 {
+    font-size: 5rem;
+  }
+
+  .locatie-sectie h2 {
+    font-size: 2.5rem;
+  }
+
+  .adres-sectie address,
+  .email-sectie p,
+  .telefoon-sectie p {
+    font-size: 1.4rem;
+  }
+
+  .social-links,
+  .openingstijden {
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .adres-sectie,
+  .email-sectie,
+  .telefoon-sectie,
+  .socials-sectie,
+  .openingstijden-sectie {
+    padding: 4rem 3rem;
+  }
+
+  .locatie-hero h1 {
+    font-size: 6rem;
+  }
 }
