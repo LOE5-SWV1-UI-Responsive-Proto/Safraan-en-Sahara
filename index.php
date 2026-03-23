@@ -52,7 +52,7 @@
       </header>
       <figure class="special-afbeelding">
         <img
-          src="mixed-grill.png"
+          src="mixedgrill.png"
           alt="Mixed Grill – Selectie van gegrild lamsvlees en kipkebab"
         />
       </figure>
