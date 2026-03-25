@@ -6,11 +6,14 @@
 (function () {
   'use strict';
 
+  // Elementen van het mobiele menu ophalen
   const hamburgerKnop  = document.getElementById('hamburgerKnop');
   const hoofdNavigatie = document.getElementById('hoofdNavigatie');
 
+  // Stop als de header niet op de pagina staat
   if (!hamburgerKnop || !hoofdNavigatie) return;
 
+  // Menu open- en dichtzetten via de hamburgerknop
   function toggleMenu() {
     const isOpen = hoofdNavigatie.classList.toggle('open');
     hamburgerKnop.setAttribute('aria-expanded', String(isOpen));
@@ -20,6 +23,7 @@
     hamburgerKnop.setAttribute('aria-label', isOpen ? 'Menu sluiten' : 'Menu openen');
   }
 
+  // Menu altijd netjes sluiten en resetten
   function sluitMenu() {
     hoofdNavigatie.classList.remove('open');
     hamburgerKnop.setAttribute('aria-expanded', 'false');
@@ -62,7 +66,7 @@
 
 })();
 
-// dropdown openen en sluiten bij klikken op de menu-titels 
+// Menu pagina: dropdown openen en sluiten bij klikken op de menu-titels
 document.addEventListener("DOMContentLoaded", function () {
   const buttons = document.querySelectorAll(".menu-title");
 
@@ -73,4 +77,3 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
-

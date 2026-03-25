@@ -626,6 +626,158 @@ address { font-style: normal; }
 p {
   color: var(--kleur-goud) !important;
 }
+
+/* reserveren pagina: buitenruimte en achtergrond */
+.reserveren-pagina {
+  padding: 135px 18px 64px;
+  background-color: #fbf8f1;
+}
+
+/* reserveren pagina: maximale breedte van de inhoud */
+.reserveren-sectie {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+/* reserveren pagina: blok met titel en tekst boven het formulier */
+.reserveren-kop {
+  max-width: 620px;
+  margin: 0 auto 3.25rem;
+  text-align: center;
+}
+
+/* reserveren pagina: grote titel */
+.reserveren-sectie h1 {
+  font-family: var(--font-display);
+  color: var(--kleur-goud);
+  font-size: 4rem;
+  line-height: 1.05;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* reserveren pagina: tekst onder de titel */
+.reserveren-intro {
+  margin: 0 auto;
+  font-family: var(--font-body);
+  font-size: 1.2rem;
+  line-height: 1.8;
+  text-align: center;
+  color: #b9860b;
+}
+
+/* reserveren pagina: grid-opmaak van het formulier */
+.reserveren-formulier {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.9rem 1.5rem;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+/* reserveren pagina: wrapper per veld */
+.formulier-veld {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+/* reserveren pagina: velden die over de volle breedte lopen */
+.formulier-veld-breed {
+  grid-column: 1 / -1;
+}
+
+/* reserveren pagina: labels boven de invoervelden */
+.reserveren-formulier label {
+  font-family: var(--font-display);
+  color: var(--kleur-goud);
+  font-size: 0.95rem;
+  padding-left: 0.2rem;
+}
+
+/* reserveren pagina: stijl van input, select en textarea */
+.reserveren-formulier input,
+.reserveren-formulier select,
+.reserveren-formulier textarea {
+  width: 100%;
+  min-height: 64px;
+  padding: 1rem 1.1rem;
+  border: 1px solid #f1e1b6;
+  border-radius: 8px;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--kleur-tekst);
+  background-color: #fff6df;
+}
+
+/* reserveren pagina: placeholder-kleur */
+.reserveren-formulier input::placeholder,
+.reserveren-formulier textarea::placeholder {
+  color: rgba(185, 134, 11, 0.7);
+}
+
+/* reserveren pagina: groter tekstvak voor extra bericht */
+.reserveren-formulier textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+/* reserveren pagina: knop onder het formulier */
+.reserveren-knop {
+  grid-column: 1 / -1;
+  justify-self: center;
+  margin-top: 0.8rem;
+  min-width: 220px;
+  border-radius: 999px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+/* reserveren pagina: mobiele aanpassingen */
+@media (max-width: 560px) {
+  .reserveren-pagina {
+    padding: 120px 18px 56px;
+  }
+
+  .reserveren-kop {
+    margin-bottom: 2.4rem;
+  }
+
+  .reserveren-sectie h1 {
+    font-size: 3rem;
+  }
+
+  .reserveren-intro {
+    font-size: 1rem;
+    line-height: 1.65;
+  }
+
+  .reserveren-formulier {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .reserveren-formulier label {
+    font-size: 0.9rem;
+  }
+
+  .reserveren-formulier input,
+  .reserveren-formulier select,
+  .reserveren-formulier textarea {
+    min-height: 56px;
+    padding: 0.75rem 0.8rem;
+    font-size: 0.95rem;
+  }
+
+  .formulier-veld-breed {
+    grid-column: auto;
+  }
+
+  .reserveren-knop {
+    width: 100%;
+  }
+}
+
 .menu-page {
   padding: 180px 16px 24px;
 }

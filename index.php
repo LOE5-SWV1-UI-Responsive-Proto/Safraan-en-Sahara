@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Saffraan &amp; Sahara – Den Haag</title>
+  <title>Saffraan &amp; Sahara - Den Haag</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,7 +16,7 @@
     <section class="hero-sectie volledig-scherm" id="sectie-hero">
       <figure class="achtergrond-afbeelding">
         <img
-          src="eten1.png"
+          src="pictures/eten1.png"
           alt="Authentiek Midden-Oosters gerecht met rijst en vlees"
         />
       </figure>
@@ -53,7 +53,7 @@
       <figure class="special-afbeelding">
         <img
           src="mixedgrill.png"
-          alt="Mixed Grill – Selectie van gegrild lamsvlees en kipkebab"
+          alt="Mixed Grill - Selectie van gegrild lamsvlees en kipkebab"
         />
       </figure>
     </section>
