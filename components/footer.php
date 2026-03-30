@@ -19,17 +19,17 @@
       <ul class="social-iconen">
         <li>
           <a href="#" class="social-link" aria-label="Volg ons op Facebook">
-            <img src="pictures/face-book.png" alt="Facebook" />
+            <img src="pictures/facebook-logo.png" alt="Facebook" />
           </a>
         </li>
         <li>
           <a href="#" class="social-link" aria-label="Volg ons op Instagram">
-            <img src="pictures/instagram.png" alt="Instagram" />
+            <img src="pictures/insta-logo.png" alt="Instagram" />
           </a>
         </li>
         <li>
           <a href="#" class="social-link" aria-label="Bekijk ons op YouTube">
-            <img src="pictures/youtube.png" alt="YouTube" />
+            <img src="pictures/youtube-logo.png" alt="YouTube" />
           </a>
         </li>
       </ul>
