@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Saffraan &amp; Sahara - Den Haag</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet" />
@@ -23,8 +23,8 @@
       <article class="hero-tekst">
         <h1>Authentieke smaken van het Midden-Oosten, vers geserveerd in Den Haag</h1>
         <nav class="cta-knoppen" aria-label="Actieknoppen">
-          <a href="#" class="knop knop-primair">Zie onze menu</a>
-          <a href="#" class="knop knop-secundair">Reserveren</a>
+          <a href="menu.php" class="knop knop-primair">Zie onze menu</a>
+          <a href="reseveren.php" class="knop knop-secundair">Reserveren</a>
         </nav>
       </article>
     </section>
@@ -52,7 +52,7 @@
       </header>
       <figure class="special-afbeelding">
         <img
-          src="mixedgrill.png"
+          src="pictures/mixedGrill.png"
           alt="Mixed Grill - Selectie van gegrild lamsvlees en kipkebab"
         />
       </figure>
@@ -61,6 +61,6 @@
 
   <?php include 'components/footer.php'; ?>
 
-  <script src="script.js"></script>
+  <script src="script/script.js"></script>
 </body>
 </html>
