@@ -16,8 +16,23 @@
     </figure>
 
     <nav class="social-media" aria-label="Sociale media links">
-      <a href="#" aria-label="Facebook" class="social-link">f</a>
-      <a href="#" aria-label="Instagram" class="social-link">in</a>
-      <a href="#" aria-label="YouTube" class="social-link">yt</a>
+      <ul class="social-iconen">
+        <li>
+          <a href="#" class="social-link" aria-label="Volg ons op Facebook">
+            <img src="pictures/face-book.png" alt="Facebook" />
+          </a>
+        </li>
+        <li>
+          <a href="#" class="social-link" aria-label="Volg ons op Instagram">
+            <img src="pictures/instagram.png" alt="Instagram" />
+          </a>
+        </li>
+        <li>
+          <a href="#" class="social-link" aria-label="Bekijk ons op YouTube">
+            <img src="pictures/youtube.png" alt="YouTube" />
+          </a>
+        </li>
+      </ul>
+
     </nav>
   </footer>
