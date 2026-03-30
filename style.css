@@ -336,6 +336,101 @@ address { font-style: normal; }
   object-position: center top;
 }
 
+/* Slideshow */
+.slideshow {
+  position: relative;
+  margin: 0 -1.5rem;
+}
+
+.slideshow-lijst {
+  overflow: hidden;
+}
+
+.slideshow-lijst > .slide {
+  display: none;
+}
+
+.slideshow-lijst > .slide.actief {
+  display: block;
+}
+
+.slide figure {
+  position: relative;
+}
+
+.slide img {
+  width: 100%;
+  height: 60vw;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+.slide figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0,0,0,0.65));
+  color: var(--kleur-wit);
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  letter-spacing: 0.08em;
+  padding: 2rem 1rem 1rem;
+}
+
+.slide-knop {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(185, 134, 11, 0.85);
+  color: var(--kleur-wit);
+  border: none;
+  font-size: 2.5rem;
+  line-height: 1;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background var(--overgang);
+  z-index: 10;
+}
+
+.slide-knop:hover,
+.slide-knop:focus-visible {
+  background: var(--kleur-goud);
+  outline: 2px solid var(--kleur-wit);
+}
+
+.slide-knop-vorig  { left:  0.5rem; }
+.slide-knop-volgend { right: 0.5rem; }
+
+.slide-stippen {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 0;
+  list-style: none;
+}
+
+.stip {
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 50%;
+  border: 2px solid var(--kleur-goud);
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+  transition: background var(--overgang);
+}
+
+.stip.actief {
+  background: var(--kleur-goud);
+}
+
 .site-footer {
   background-color: var(--kleur-footer);
   padding: 2rem 1.5rem;
@@ -1058,97 +1153,240 @@ p {
   }
 }
 
-/* Slideshow */
-.slideshow {
-  position: relative;
-  margin: 0 -1.5rem;
+/* Reserveren */
+.reserveren-pagina {
+  padding: 120px 18px 56px;
+  background-color: #fbf8f1;
 }
 
-.slideshow-lijst {
-  overflow: hidden;
+.reserveren-sectie {
+  max-width: 760px;
+  margin: 0 auto;
 }
 
-.slideshow-lijst > .slide {
-  display: none;
+.reserveren-kop {
+  max-width: 620px;
+  margin: 0 auto 2.4rem;
+  text-align: center;
 }
 
-.slideshow-lijst > .slide.actief {
-  display: block;
-}
-
-.slide figure {
-  position: relative;
-}
-
-.slide img {
-  width: 100%;
-  height: 60vw;
-  object-fit: cover;
-  object-position: center top;
-  display: block;
-}
-
-.slide figcaption {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: linear-gradient(transparent, rgba(0,0,0,0.65));
-  color: var(--kleur-wit);
+.reserveren-sectie h1 {
   font-family: var(--font-display);
-  font-size: 1.4rem;
+  color: var(--kleur-goud);
+  font-size: 3rem;
+  line-height: 1.05;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.reserveren-intro {
+  margin: 0 auto;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.65;
+  text-align: center;
+  color: #b9860b;
+}
+
+.reserveren-formulier {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.formulier-veld {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.formulier-veld-breed {
+  grid-column: auto;
+}
+
+.reserveren-formulier label {
+  font-family: var(--font-display);
+  color: var(--kleur-goud);
+  font-size: 0.9rem;
+  padding-left: 0.2rem;
+}
+
+.reserveren-formulier input,
+.reserveren-formulier select,
+.reserveren-formulier textarea {
+  width: 100%;
+  min-height: 56px;
+  padding: 0.75rem 0.8rem;
+  border: 1px solid #f1e1b6;
+  border-radius: 8px;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: var(--kleur-tekst);
+  background-color: #fff6df;
+}
+
+.reserveren-formulier input::placeholder,
+.reserveren-formulier textarea::placeholder {
+  color: rgba(185, 134, 11, 0.7);
+}
+
+.reserveren-formulier textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+.reserveren-knop {
+  grid-column: 1 / -1;
+  justify-self: center;
+  margin-top: 0.8rem;
+  min-width: 220px;
+  border-radius: 999px;
+  text-transform: uppercase;
   letter-spacing: 0.08em;
-  padding: 2rem 1rem 1rem;
+  width: 100%;
 }
 
-.slide-knop {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(185, 134, 11, 0.85);
-  color: var(--kleur-wit);
+/* Reserveren tablet 768px */
+@media (min-width: 768px) {
+  .reserveren-pagina {
+    padding: 135px 18px 64px;
+  }
+
+  .reserveren-kop {
+    margin-bottom: 3.25rem;
+  }
+
+  .reserveren-sectie h1 {
+    font-size: 4rem;
+  }
+
+  .reserveren-intro {
+    font-size: 1.2rem;
+    line-height: 1.8;
+  }
+
+  .reserveren-formulier {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.9rem 1.5rem;
+  }
+
+  .reserveren-formulier label {
+    font-size: 0.95rem;
+  }
+
+  .reserveren-formulier input,
+  .reserveren-formulier select,
+  .reserveren-formulier textarea {
+    min-height: 64px;
+    padding: 1rem 1.1rem;
+    font-size: 1rem;
+  }
+
+  .formulier-veld-breed {
+    grid-column: 1 / -1;
+  }
+
+  .reserveren-knop {
+    width: auto;
+  }
+}
+
+/* Reserveren desktop 1024px */
+@media (min-width: 1024px) {
+  .reserveren-pagina {
+    padding: 150px 32px 72px;
+  }
+
+  .reserveren-sectie {
+    max-width: 860px;
+  }
+
+  .reserveren-sectie h1 {
+    font-size: 4.5rem;
+  }
+
+  .reserveren-formulier {
+    gap: 2rem;
+  }
+}
+
+/* Menu */
+p {
+  color: var(--kleur-goud) !important;
+}
+
+.menu-page {
+  padding: 180px 16px 24px;
+}
+
+.menu-column h2 {
+  color: var(--kleur-goud);
+  margin-bottom: 20px;
+  font-family: var(--font-display);
+  font-size: 32px;
+  font-weight: 700;
+  display: block;
+}
+
+.menu-item {
+  border-bottom: 1px solid #ddd;
+}
+
+.menu-title {
+  width: 100%;
+  background: none;
   border: none;
-  font-size: 2.5rem;
-  line-height: 1;
-  width: 2.5rem;
-  height: 2.5rem;
-  border-radius: 50%;
-  cursor: pointer;
+  padding: 16px 0;
+  font-size: 18px;
+  text-align: left;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  transition: background var(--overgang);
-  z-index: 10;
-}
-
-.slide-knop:hover,
-.slide-knop:focus-visible {
-  background: var(--kleur-goud);
-  outline: 2px solid var(--kleur-wit);
-}
-
-.slide-knop-vorig  { left:  0.5rem; }
-.slide-knop-volgend { right: 0.5rem; }
-
-.slide-stippen {
-  display: flex;
-  justify-content: center;
-  gap: 0.5rem;
-  padding: 0.75rem 0;
-  list-style: none;
-}
-
-.stip {
-  width: 0.7rem;
-  height: 0.7rem;
-  border-radius: 50%;
-  border: 2px solid var(--kleur-goud);
-  background: transparent;
   cursor: pointer;
-  padding: 0;
-  transition: background var(--overgang);
+  color: var(--kleur-goud);
 }
 
-.stip.actief {
-  background: var(--kleur-goud);
+.menu-content {
+  display: none;
+  margin: 0;
+  padding: 0 0 16px;
+}
+
+.menu-content.open {
+  display: block;
+}
+
+/* Menu tablet 768px */
+@media (min-width: 768px) {
+  .menu-page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 180px 32px 40px;
+  }
+
+  .menu-column h2 {
+    font-size: 36px;
+  }
+
+  .menu-title {
+    font-size: 20px;
+  }
+}
+
+/* Menu desktop 1024px */
+@media (min-width: 1024px) {
+  .menu-page {
+    max-width: 1100px;
+    padding: 190px 48px 56px;
+  }
+
+  .menu-column h2 {
+    font-size: 40px;
+  }
+
+  .menu-title {
+    font-size: 22px;
+  }
 }
