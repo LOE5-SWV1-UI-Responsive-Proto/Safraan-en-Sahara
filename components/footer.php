@@ -1,7 +1,7 @@
   <footer class="site-footer">
 
     <figure class="footer-logo">
-      <img src="logotekst.png" alt="Saffraan & Sahara Logo" />
+      <img src="pictures/logotekst.png" alt="Saffraan & Sahara Logo" />
     </figure>
 
     <address class="contact-info">
@@ -12,7 +12,7 @@
     </address>
 
     <figure class="halal-keurmerk">
-      <img src="halal.png" alt="Halal keurmerk gecertificeerd" />
+      <img src="pictures/halal.png" alt="Halal keurmerk gecertificeerd" />
     </figure>
 
     <nav class="social-media" aria-label="Sociale media links">

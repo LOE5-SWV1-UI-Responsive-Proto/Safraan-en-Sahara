@@ -7,7 +7,7 @@
   <meta name="keywords" content="reserveren, restaurant, Den Haag, Saffraan & Sahara" />
   <meta name="author" content="Ehsaan Ahmad" />
   <title>Reserveren | Saffraan &amp; Sahara</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet" />
@@ -86,6 +86,6 @@
 
   <?php include 'components/footer.php'; ?>
 
-  <script src="script.js"></script>
+  <script src="script/script.js"></script>
 </body>
 </html>
