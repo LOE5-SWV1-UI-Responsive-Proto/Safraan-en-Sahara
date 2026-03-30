@@ -50,12 +50,42 @@
           geserveerd met rijst en gegrilde groenten
         </p>
       </header>
-      <figure class="special-afbeelding">
-        <img
-          src="mixedgrill.png"
-          alt="Mixed Grill - Selectie van gegrild lamsvlees en kipkebab"
-        />
-      </figure>
+      <div class="slideshow" role="region" aria-label="Gerechten diavoorstelling">
+        <ul class="slideshow-lijst">
+          <li class="slide actief">
+            <figure>
+              <img src="pictures/cous-cous.png" alt="Couscous met groenten en gekruid vlees" />
+              <figcaption>Couscous</figcaption>
+            </figure>
+          </li>
+          <li class="slide">
+            <figure>
+              <img src="pictures/kofte.png" alt="Köfte – gekruide gehaktballetjes van lam" />
+              <figcaption>Köfte</figcaption>
+            </figure>
+          </li>
+          <li class="slide">
+            <figure>
+              <img src="pictures/Mansaf.png" alt="Mansaf – Jordaans feestgerecht van lam met rijst en yoghurtsaus" />
+              <figcaption>Mansaf</figcaption>
+            </figure>
+          </li>
+          <li class="slide">
+            <figure>
+              <img src="pictures/mezzel-star.png" alt="Mezzel Star – selectie van mezze-hapjes" />
+              <figcaption>Mezzel Star</figcaption>
+            </figure>
+          </li>
+        </ul>
+        <button class="slide-knop slide-knop-vorig" aria-label="Vorig gerecht">&#8249;</button>
+        <button class="slide-knop slide-knop-volgend" aria-label="Volgend gerecht">&#8250;</button>
+        <ol class="slide-stippen" aria-label="Gerecht navigatie">
+          <li><button class="stip actief" aria-label="Dia 1" aria-current="true"></button></li>
+          <li><button class="stip" aria-label="Dia 2"></button></li>
+          <li><button class="stip" aria-label="Dia 3"></button></li>
+          <li><button class="stip" aria-label="Dia 4"></button></li>
+        </ol>
+      </div>
     </section>
   </main>
 

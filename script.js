@@ -66,6 +66,53 @@
 
 })();
 
+// Slideshow
+document.addEventListener('DOMContentLoaded', function () {
+  var slides  = document.querySelectorAll('.slideshow-lijst > .slide');
+  var stippen = document.querySelectorAll('.stip');
+  if (!slides.length) return;
+
+  var huidig = 0;
+  var timer;
+
+  function naarSlide(index) {
+    slides[huidig].classList.remove('actief');
+    if (stippen[huidig]) {
+      stippen[huidig].classList.remove('actief');
+      stippen[huidig].removeAttribute('aria-current');
+    }
+
+    huidig = (index + slides.length) % slides.length;
+
+    slides[huidig].classList.add('actief');
+    if (stippen[huidig]) {
+      stippen[huidig].classList.add('actief');
+      stippen[huidig].setAttribute('aria-current', 'true');
+    }
+  }
+
+  function start() {
+    timer = setInterval(function () { naarSlide(huidig + 1); }, 4000);
+  }
+
+  function reset() {
+    clearInterval(timer);
+    start();
+  }
+
+  var knopVorig   = document.querySelector('.slide-knop-vorig');
+  var knopVolgend = document.querySelector('.slide-knop-volgend');
+
+  if (knopVorig)   knopVorig.addEventListener('click',   function () { naarSlide(huidig - 1); reset(); });
+  if (knopVolgend) knopVolgend.addEventListener('click', function () { naarSlide(huidig + 1); reset(); });
+
+  stippen.forEach(function (stip, i) {
+    stip.addEventListener('click', function () { naarSlide(i); reset(); });
+  });
+
+  start();
+});
+
 // Menu pagina: dropdown openen en sluiten bij klikken op de menu-titels
 document.addEventListener("DOMContentLoaded", function () {
   const buttons = document.querySelectorAll(".menu-title");
