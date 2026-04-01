@@ -16,7 +16,7 @@
     <section class="hero-sectie volledig-scherm" id="sectie-hero">
       <figure class="achtergrond-afbeelding">
         <img
-          src="pictures/eten1.png"
+          src="pictures/eeste-foto.png"
           alt="Authentiek Midden-Oosters gerecht met rijst en vlees"
         />
       </figure>
@@ -32,7 +32,7 @@
     <section class="sfeer-sectie volledig-scherm" id="sectie-sfeer">
       <figure class="achtergrond-afbeelding">
         <img
-          src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200&q=80"
+          src="pictures/leeg-restaurant.png"
           alt="Sfeervol restaurant interieur met Midden-Oosterse decoratie"
         />
       </figure>
