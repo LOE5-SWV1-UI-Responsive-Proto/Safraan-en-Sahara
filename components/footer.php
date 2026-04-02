@@ -18,17 +18,17 @@
     <nav class="social-media" aria-label="Sociale media links">
       <ul class="social-iconen">
         <li>
-          <a href="#" class="social-link" aria-label="Volg ons op Facebook">
+          <a href="https://www.facebook.com/saharafoodssa/" class="social-link" aria-label="Volg ons op Facebook">
             <img src="pictures/facebook-logo.png" alt="Facebook" />
           </a>
         </li>
         <li>
-          <a href="#" class="social-link" aria-label="Volg ons op Instagram">
+          <a href="https://www.instagram.com/saharafoods.nl/" class="social-link" aria-label="Volg ons op Instagram">
             <img src="pictures/insta-logo.png" alt="Instagram" />
           </a>
         </li>
         <li>
-          <a href="#" class="social-link" aria-label="Bekijk ons op YouTube">
+          <a href="https://www.youtube.com/watch?v=XzOFejKMSUY" class="social-link" aria-label="Bekijk ons op YouTube">
             <img src="pictures/youtube-logo.png" alt="YouTube" />
           </a>
         </li>
