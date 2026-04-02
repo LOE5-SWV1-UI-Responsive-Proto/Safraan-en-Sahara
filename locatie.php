@@ -42,9 +42,9 @@
   <section class="locatie-sectie socials-sectie">
     <h2>Socials:</h2>
     <ul class="social-links">
-      <li>Facebook: <a href="https://facebook.com/SaffraanSahara" target="_blank" rel="noopener">@Saffraan&Sahara</a></li>
-      <li>Youtube: <a href="https://youtube.com/@SaffraanSahara" target="_blank" rel="noopener">@Saffraan&Sahara</a></li>
-      <li>Instagram: <a href="https://instagram.com/SaffraanSahara" target="_blank" rel="noopener">@Saffraan&Sahara</a></li>
+      <li>Facebook: <a href="https://facebook.com/SaffraanSahara" target="_blank" >Saffraan@Sahara</a></li>
+      <li>Youtube: <a href="https://youtube.com/@SaffraanSahara" target="_blank" >De Safraan Show</a></li>
+      <li>Instagram: <a href="https://instagram.com/SaffraanSahara" target="_blank" >insta foods met Safraan</a></li>
     </ul>
   </section>
 
