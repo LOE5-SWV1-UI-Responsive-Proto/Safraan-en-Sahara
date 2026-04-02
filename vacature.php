@@ -4,9 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Bekijk de beschikbare vacatures bij Saffraan & Sahara in Den Haag." />
-  <meta name="keywords" content="vacatures, restaurant, Den Haag, Saffraan & Sahara" />
+  <meta name="keywords" content="Midden-Oosters restaurant, Den Haag, authentieke gerechten, Saffraan & Sahara, menu, reserveren, vacatures" />
   <meta name="author" content="Ehsaan Ahmad" />
-  <title>Vacatures | Saffraan &amp; Sahara</title>
+  <title>Saffraan &amp; Sahara - Den Haag</title>
   <link rel="stylesheet" href="style/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,9 +15,14 @@
 <body>
   <?php include 'components/header.php'; ?>
 
-  <!-- Hoofdinhoud van de reserverenpagina -->
+  <section class="video-sectie">
+  <video class="vacature-video" controls>
+    <source src="pictures/vacature.mp4" type="video/mp4">
+    Uw browser ondersteunt de video-tag niet.
+  </video>
+</section>
+
   <main class="reserveren-pagina">
-    <!-- Intro en formulier voor reserveringen -->
     <section class="reserveren-sectie">
       <header class="reserveren-kop">
         <h1>Vacatures</h1>
@@ -26,9 +31,9 @@
         </p>
       </header>
 
-      <!-- Reserveringsformulier -->
+     
       <form class="reserveren-formulier" action="#" method="post">
-        <!-- Persoonsgegevens -->
+    
         <p class="formulier-veld">
           <label for="voornaam">Voornaam</label>
           <input type="text" id="voornaam" name="voornaam" />
@@ -57,7 +62,7 @@
           <textarea id="bericht" name="bericht" rows="4"></textarea>
         </p>
 
-        <!-- Verzenden van het formulier -->
+     
         <button type="submit" class="knop knop-primair reserveren-knop">versturen</button>
       </form>
     </section>

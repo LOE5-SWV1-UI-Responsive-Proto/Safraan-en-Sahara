@@ -847,12 +847,13 @@ address { font-style: normal; }
 
 /* Reserveren */
 .reserveren-pagina {
-  padding: 120px 18px 56px;
+  padding: var(--nav-hoogte) 0 56px;
   background-color: #fbf8f1;
 }
 
 .reserveren-sectie {
-  max-width: 760px;
+  width: 100%;
+  max-width: 860px;
   margin: 0 auto;
 }
 
@@ -878,6 +879,21 @@ address { font-style: normal; }
   line-height: 1.65;
   text-align: center;
   color: #b9860b;
+}
+
+.video-sectie {
+  width: 100vw;
+  height: calc(100vh - var(--nav-hoogte));
+  margin: 0 0 2rem;
+  margin-left: calc(50% - 50vw);
+  overflow: hidden;
+}
+
+.vacature-video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .reserveren-formulier {
@@ -943,7 +959,7 @@ address { font-style: normal; }
 /* Reserveren tablet 768px */
 @media (min-width: 768px) {
   .reserveren-pagina {
-    padding: 135px 18px 64px;
+    padding: var(--nav-hoogte) 18px 64px;
   }
 
   .reserveren-kop {
@@ -988,7 +1004,7 @@ address { font-style: normal; }
 /* Reserveren desktop 1024px */
 @media (min-width: 1024px) {
   .reserveren-pagina {
-    padding: 150px 32px 72px;
+    padding: var(--nav-hoogte) 32px 72px;
   }
 
   .reserveren-sectie {
@@ -1080,5 +1096,45 @@ p {
 
   .menu-title {
     font-size: 22px;
+  }
+}
+
+.vacature-content {
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+  padding: 120px 20px 60px;
+  color: #fff;
+}
+
+.vacature-hero {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.vacature-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.vacature-hero p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #fff !important;
+}
+
+@media (max-width: 768px) {
+  .vacature-content {
+    padding: 100px 16px 40px;
+  }
+
+  .vacature-hero h1 {
+    font-size: 2rem;
+  }
+
+  .vacature-hero p {
+    font-size: 1rem;
   }
 }
