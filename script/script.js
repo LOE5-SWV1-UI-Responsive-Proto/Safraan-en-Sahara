@@ -78,6 +78,35 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+// Tekstgrootte widget (menu pagina)
+const knopVergroot = document.getElementById('tekstVergroot');
+const knopVerklein = document.getElementById('tekstVerklein');
+
+if (knopVergroot && knopVerklein) {
+  const MIN_GROOTTE = 12;
+  const MAX_GROOTTE = 24;
+  const STAP = 2;
+
+  function huidigeGrootte() {
+    return parseInt(document.documentElement.style.fontSize) || 16;
+  }
+
+  function pasGrootteToe(grootte) {
+    document.documentElement.style.fontSize = grootte + 'px';
+
+    knopVergroot.disabled = grootte >= MAX_GROOTTE;
+    knopVerklein.disabled = grootte <= MIN_GROOTTE;
+  }
+
+  knopVergroot.addEventListener('click', function () {
+    pasGrootteToe(Math.min(huidigeGrootte() + STAP, MAX_GROOTTE));
+  });
+
+  knopVerklein.addEventListener('click', function () {
+    pasGrootteToe(Math.max(huidigeGrootte() - STAP, MIN_GROOTTE));
+  });
+}
+
 // Slideshow
 document.addEventListener('DOMContentLoaded', function () {
   var slides  = document.querySelectorAll('.slideshow-lijst > .slide');

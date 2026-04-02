@@ -19,17 +19,17 @@
       <ul class="social-iconen">
         <li>
           <a href="https://www.facebook.com/saharafoodssa/" target="_blank" class="social-link" aria-label="Volg ons op Facebook">
-            <img src="pictures/facebook-logo.png" alt="Facebook" />
+            <img src="pictures/facebook-logo.png" alt="Facebook icoon" />
           </a>
         </li>
         <li>
           <a href="https://www.instagram.com/saharafoods.nl/" target="_blank" class="social-link" aria-label="Volg ons op Instagram">
-            <img src="pictures/insta-logo.png" alt="Instagram" />
+            <img src="pictures/insta-logo.png" alt="" />
           </a>
         </li>
         <li>
           <a href="https://www.youtube.com/watch?v=XzOFejKMSUY" target="_blank"  class="social-link" aria-label="Bekijk ons op YouTube">
-            <img src="pictures/youtube-logo.png" alt="YouTube" />
+            <img src="pictures/youtube-logo.png" alt="" />
           </a>
         </li>
       </ul>
