@@ -15,9 +15,14 @@
 <body>
   <?php include 'components/header.php'; ?>
 
-  <!-- Hoofdinhoud van de reserverenpagina -->
-  <main class="reserveren-pagina">
-    <!-- Intro en formulier voor reserveringen -->
+  <section class="vacature-video-hero" aria-label="Vacature video">
+    <video autoplay muted loop playsinline>
+      <source src="pictures/Vacaturevideo_Saffraan_Sahara.mp4" type="video/mp4" />
+      Je browser ondersteunt geen video.
+    </video>
+  </section>
+
+  <main class="reserveren-pagina vacature-content">
     <section class="reserveren-sectie">
       <header class="reserveren-kop">
         <h1>Vacatures</h1>
@@ -28,7 +33,6 @@
 
       <!-- Reserveringsformulier -->
       <form class="reserveren-formulier" action="#" method="post">
-        <!-- Persoonsgegevens -->
         <p class="formulier-veld">
           <label for="voornaam">Voornaam</label>
           <input type="text" id="voornaam" name="voornaam" />
@@ -44,20 +48,16 @@
           <input type="email" id="email" name="email" />
         </p>
 
-
         <p class="formulier-veld">
           <label for="telefoon">Telefoonnummer</label>
           <input type="tel" id="telefoon" name="telefoon" />
         </p>
-
-     
 
         <p class="formulier-veld formulier-veld-breed">
           <label for="bericht">Bericht en of motivatie</label>
           <textarea id="bericht" name="bericht" rows="4"></textarea>
         </p>
 
-        <!-- Verzenden van het formulier -->
         <button type="submit" class="knop knop-primair reserveren-knop">versturen</button>
       </form>
     </section>
