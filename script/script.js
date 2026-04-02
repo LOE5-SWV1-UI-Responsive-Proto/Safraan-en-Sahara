@@ -1,19 +1,10 @@
-/**
- * Saffraan & Sahara – script.js
- * Functionaliteit: Hamburger Menu (mobiel & tablet)
- */
 
 (function () {
-  'use strict';
-
-  // Elementen van het mobiele menu ophalen
   const hamburgerKnop  = document.getElementById('hamburgerKnop');
   const hoofdNavigatie = document.getElementById('hoofdNavigatie');
 
-  // Stop als de header niet op de pagina staat
   if (!hamburgerKnop || !hoofdNavigatie) return;
 
-  // Menu open- en dichtzetten via de hamburgerknop
   function toggleMenu() {
     const isOpen = hoofdNavigatie.classList.toggle('open');
     hamburgerKnop.setAttribute('aria-expanded', String(isOpen));
@@ -23,7 +14,6 @@
     hamburgerKnop.setAttribute('aria-label', isOpen ? 'Menu sluiten' : 'Menu openen');
   }
 
-  // Menu altijd netjes sluiten en resetten
   function sluitMenu() {
     hoofdNavigatie.classList.remove('open');
     hamburgerKnop.setAttribute('aria-expanded', 'false');
@@ -33,36 +23,28 @@
     hamburgerKnop.setAttribute('aria-label', 'Menu openen');
   }
 
-  // Hamburger knop klik
+
   hamburgerKnop.addEventListener('click', toggleMenu);
 
-  // Menu sluiten bij klik op een link
   hoofdNavigatie.querySelectorAll('a').forEach(function (link) {
     link.addEventListener('click', sluitMenu);
   });
 
-  // Menu sluiten bij klik buiten de header
   document.addEventListener('click', function (event) {
     const isBindenHeader = event.target.closest('.site-header');
     if (!isBindenHeader && hoofdNavigatie.classList.contains('open')) {
       sluitMenu();
     }
   });
-
-  // Menu sluiten met Escape-toets
+//alleen voor het cgi!!!
   document.addEventListener('keydown', function (event) {
     if (event.key === 'Escape' && hoofdNavigatie.classList.contains('open')) {
       sluitMenu();
       hamburgerKnop.focus();
     }
   });
-
-  // Menu sluiten bij resize naar desktop
-  window.addEventListener('resize', function () {
-    if (window.innerWidth >= 1024) {
-      sluitMenu();
-    }
-  });
+  //einde alleen voor cgi
+  
 
 })();
 
@@ -108,48 +90,33 @@ if (knopVergroot && knopVerklein) {
 }
 
 // Slideshow
-document.addEventListener('DOMContentLoaded', function () {
-  var slides  = document.querySelectorAll('.slideshow-lijst > .slide');
-  var stippen = document.querySelectorAll('.stip');
-  if (!slides.length) return;
+(function () {
 
-  var huidig = 0;
-  var timer;
+  document.addEventListener('DOMContentLoaded', function () {
+    const slides = document.querySelectorAll('.slide');
+    const stippen = document.querySelectorAll('.stip');
+    const vorigKnop = document.querySelector('.slide-knop-vorig');
+    const volgendKnop = document.querySelector('.slide-knop-volgend');
 
-  function naarSlide(index) {
-    slides[huidig].classList.remove('actief');
-    if (stippen[huidig]) {
-      stippen[huidig].classList.remove('actief');
-      stippen[huidig].removeAttribute('aria-current');
+    let index = 0;
+
+    if (!slides.length) return;
+
+    function toonSlide(n) {
+      slides.forEach(s => s.classList.remove('actief'));
+      stippen.forEach(s => s.classList.remove('actief'));
+
+      index = (n + slides.length) % slides.length;
+
+      slides[index].classList.add('actief');
+      stippen[index].classList.add('actief');
     }
 
-    huidig = (index + slides.length) % slides.length;
+    volgendKnop.addEventListener('click', () => toonSlide(index + 1));
+    vorigKnop.addEventListener('click', () => toonSlide(index - 1));
 
-    slides[huidig].classList.add('actief');
-    if (stippen[huidig]) {
-      stippen[huidig].classList.add('actief');
-      stippen[huidig].setAttribute('aria-current', 'true');
-    }
-  }
-
-  function start() {
-    timer = setInterval(function () { naarSlide(huidig + 1); }, 4000);
-  }
-
-  function reset() {
-    clearInterval(timer);
-    start();
-  }
-
-  var knopVorig   = document.querySelector('.slide-knop-vorig');
-  var knopVolgend = document.querySelector('.slide-knop-volgend');
-
-  if (knopVorig)   knopVorig.addEventListener('click',   function () { naarSlide(huidig - 1); reset(); });
-  if (knopVolgend) knopVolgend.addEventListener('click', function () { naarSlide(huidig + 1); reset(); });
-
-  stippen.forEach(function (stip, i) {
-    stip.addEventListener('click', function () { naarSlide(i); reset(); });
+    stippen.forEach((stip, i) => {
+      stip.addEventListener('click', () => toonSlide(i));
+    });
   });
-
-  start();
-});
+})();
