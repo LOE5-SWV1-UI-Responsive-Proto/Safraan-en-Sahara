@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Bekijk de beschikbare vacatures bij Saffraan & Sahara in Den Haag." />
-  <meta name="keywords" content="vacatures, restaurant, Den Haag, Saffraan & Sahara" />
+  <meta name="description" content="Ontdek de authentieke smaken van het Midden-Oosten bij Saffraan & Sahara in Den Haag. Geniet van traditionele gerechten, een warme sfeer en uitstekende service. Reserveer nu!" />
+  <meta name="keywords" content="Midden-Oosters restaurant, Den Haag, authentieke gerechten, Saffraan & Sahara, menu, reserveren" />
   <meta name="author" content="Ehsaan Ahmad" />
-  <title>Vacatures | Saffraan &amp; Sahara</title>
+  <title>Saffraan &amp; Sahara - Den Haag</title>
   <link rel="stylesheet" href="style/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
