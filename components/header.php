@@ -1,6 +1,3 @@
-<!DOCTYPE html>
-<html lang="nl">
-
 <header class="site-header">
 
     <figure class="logo">
