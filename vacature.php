@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Ontdek de authentieke smaken van het Midden-Oosten bij Saffraan & Sahara in Den Haag. Geniet van traditionele gerechten, een warme sfeer en uitstekende service. Reserveer nu!" />
-  <meta name="keywords" content="Midden-Oosters restaurant, Den Haag, authentieke gerechten, Saffraan & Sahara, menu, reserveren" />
+  <meta name="description" content="Bekijk de vacatures van Saffraan & Sahara in Den Haag en solliciteer direct. Word onderdeel van ons team in de keuken, bediening of afwas." />
+  <meta name="keywords" content="vacatures restaurant Den Haag, werken horeca, Saffraan & Sahara, bediening, keuken, solliciteren" />
   <meta name="author" content="Ehsaan Ahmad" />
-  <title>Saffraan &amp; Sahara - Den Haag</title>
+  <title>Vacatures | Saffraan &amp; Sahara - Den Haag</title>
   <link rel="stylesheet" href="style/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,43 +22,76 @@
     </video>
   </section>
 
-  <main class="reserveren-pagina vacature-content">
-    <section class="reserveren-sectie">
-      <header class="reserveren-kop">
+  <main class="vacature-pagina vacature-content">
+    <section class="vacature-sectie">
+      <header class="vacature-kop">
         <h1>Vacatures</h1>
-        <p class="reserveren-intro">
-          Word onderdeel van ons team, kom werken bij ons!
+        <p class="vacature-intro">
+          Lijkt het je leuk om in een warm en gastvrij restaurant te werken? Wij zoeken enthousiaste collega's voor de bediening, keuken en afwas.
         </p>
       </header>
 
-      <!-- Reserveringsformulier -->
-      <form class="reserveren-formulier" action="#" method="post">
+      <section class="vacature-informatie" aria-label="Waarom werken bij ons">
+        <article class="vacature-punt">
+          <h2>Wat wij bieden</h2>
+          <p>Een fijne werksfeer, afwisselend werk en een team waarin samenwerken centraal staat.</p>
+        </article>
+
+        <article class="vacature-punt">
+          <h2>Wie wij zoeken</h2>
+          <p>Iemand die gemotiveerd is, netjes werkt en vriendelijk omgaat met gasten en collega's.</p>
+        </article>
+
+        <article class="vacature-punt">
+          <h2>Beschikbare rollen</h2>
+          <p>Bediening, keukenhulp, afwas of allround horeca medewerker.</p>
+        </article>
+      </section>
+
+      <!-- Sollicitatieformulier -->
+      <form class="vacature-formulier" action="#" method="post">
         <p class="formulier-veld">
           <label for="voornaam">Voornaam</label>
-          <input type="text" id="voornaam" name="voornaam" />
+          <input type="text" id="voornaam" name="voornaam" autocomplete="given-name" required />
         </p>
 
         <p class="formulier-veld">
           <label for="achternaam">Achternaam</label>
-          <input type="text" id="achternaam" name="achternaam" />
+          <input type="text" id="achternaam" name="achternaam" autocomplete="family-name" required />
         </p>
 
         <p class="formulier-veld">
           <label for="email">Email</label>
-          <input type="email" id="email" name="email" />
+          <input type="email" id="email" name="email" autocomplete="email" required />
         </p>
 
         <p class="formulier-veld">
           <label for="telefoon">Telefoonnummer</label>
-          <input type="tel" id="telefoon" name="telefoon" />
+          <input type="tel" id="telefoon" name="telefoon" autocomplete="tel" required />
+        </p>
+
+        <p class="formulier-veld">
+          <label for="functie">Functie</label>
+          <select id="functie" name="functie" required>
+            <option value="">kies een functie</option>
+            <option value="bediening">Bediening</option>
+            <option value="keukenhulp">Keukenhulp</option>
+            <option value="afwas">Afwas</option>
+            <option value="allround">Allround horeca medewerker</option>
+          </select>
+        </p>
+
+        <p class="formulier-veld">
+          <label for="beschikbaar">Beschikbaar vanaf</label>
+          <input type="date" id="beschikbaar" name="beschikbaar" required />
         </p>
 
         <p class="formulier-veld formulier-veld-breed">
-          <label for="bericht">Bericht en of motivatie</label>
-          <textarea id="bericht" name="bericht" rows="4"></textarea>
+          <label for="motivatie">Motivatie</label>
+          <textarea id="motivatie" name="motivatie" rows="4" placeholder="Vertel kort waarom je bij ons wilt werken." required></textarea>
         </p>
 
-        <button type="submit" class="knop knop-primair reserveren-knop">versturen</button>
+        <button type="submit" class="knop knop-primair vacature-knop">Solliciteren</button>
       </form>
     </section>
   </main>
