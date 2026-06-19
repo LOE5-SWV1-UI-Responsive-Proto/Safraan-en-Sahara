@@ -16,10 +16,10 @@
 <body>
   <?php include 'components/header.php'; ?>
 
-  <div class="tekstgrootte-widget" aria-label="Tekstgrootte aanpassen">
+  <aside class="tekstgrootte-widget" aria-label="Tekstgrootte aanpassen">
     <button class="tekstgrootte-knop" id="tekstVergroot" aria-label="Tekst vergroten">A+</button>
     <button class="tekstgrootte-knop" id="tekstVerklein" aria-label="Tekst verkleinen">A−</button>
-  </div>
+  </aside>
 
 <main class="menu-page">
   <section class="menu-column">
